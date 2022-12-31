@@ -1,0 +1,161 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: clip;
+}
+
+h1, h6 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h6 {
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+span {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-right: 0.5%;
+  color: blue;
+}
+
+a {
+  color: red;
+}
+
+a:link {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.input {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 25px 35px;
+  margin-bottom: 20px;
+  width: 60%;
+  background-color: rgba(43, 77, 227, 0.35);
+  float: auto;
+  margin: auto;
+  display: flexbox;
+  user-select: none;
+}
+
+input {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.1em;
+}
+
+.height {
+  text-align: center;
+  width: 20%;
+  display: contents;
+  float: inherit;
+}
+
+label {
+  font-weight: bold;
+}
+
+.height label {
+  margin: 0 2px 0 0.5px;
+}
+
+hr {
+  margin: 2% 0;
+}
+
+select {
+  font-family: 'Poppins', sans-serif;
+  padding: 2px 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  user-select: none;
+  width: 40%;
+}
+
+select.option {
+  font-family: 'Roboto Slab', serif;
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  cursor: pointer;
+  padding: 2px 5px;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  margin: auto;
+  user-select: text;
+}
+
+button:hover {
+  background-color: #185ec7;
+  cursor: pointer;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 6px;
+  border: 1.5px solid black;
+  background-color: #2f7ff7;
+  font-size: 18px;
+  padding: 6px 12px;
+  transition-duration: 0.4s;
+}
+
+#output {
+  font-size: 2em;
+  text-align: center;
+  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
+}
+
+#error {
+  color: red;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid black;
+  margin: auto;
+  margin-top: none;
+  width: 30%;
+}
+
+td {
+  font-size: 1em;
+}
+
+td.group {
+  font-size: 0.6em;
+  background-color: rgba(100, 138, 255, 0.68);
+  padding: 3px 8px;
+}
+
+td:not(.group) {
+  color: #2f7ff7;
+  padding: 0 6px;
+  font-family: 'Mukta', sans-serif;
+}
+
+p:not(#error) {
+  text-decoration: underline;
+  margin-bottom: none;
+}

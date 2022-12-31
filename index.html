@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" http-equiv="X-UA-Compatible"
+    content="ie=edge">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="calculate.png" type="image/x-icon">
+  <title>Calorie Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Condensed:wght@300&family=Rubik:ital@1&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <h1>Calorie Calculator</h1>
+  <h6>Use information about yourself to determine how many calories you need every day.<br><b>Recommended age: 15-80</b></h6>
+  <br><br><br>
+  <div class="input">
+    <span>Age:</span>
+    <input type="text" id="age" placeholder="Enter number here" autocomplete="off" maxlength="3">
+    <label>years</label>
+    <br><br>
+    <span>Gender:</span>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <br><br>
+    <span>Height:</span>
+    <div class="height">
+      <input type="text" id="feet" placeholder="Enter number here" autocomplete="off" maxlength="1">
+      <label>feet</label>
+      <input type="text" id="inches" placeholder="Enter number here" autocomplete="off" maxlength="2">
+      <label>inches</label>
+    </div>
+    <br><br>
+    <span>Weight:</span>
+    <input text="text" id="weight" placeholder="Enter number here" autocomplete="off" maxlength="4">
+    <label>lbs</label>
+    <br><br>
+    <span>Activity:</span>
+    <select name="activity" id="activity">
+			<option value="1.2" selected>Sedentary: little or no exercise</option>
+			<option value="1.375">Light: exercise 1-3 times/week</option>
+			<option value="1.465">Moderate: exercise 4-5 times/week</option>
+			<option value="1.55">Active: daily exercise or intense exercise 3-4 times/week</option>
+			<option value="1.725">Very Active: intense exercise 6-7 times/week</option>
+			<option value="1.9">Extra Active: very intense exercise daily, or physical job</option>
+		</select>
+    <br><br>
+    <ul>
+    	<li><b>Exercise:</b> 15-30 minutes of elevated heart rate activity.</li>
+    	<li><b>Intense exercise:</b> 45-120 minutes of elevated heart rate activity.</li>
+    	<li><b>Very intense exercise:</b> 2+ hours of elevated heart rate activity.</li>
+    </ul>
+    <br>
+    <button id="calculate">Calculate</button>
+  </div>
+  <div id="output"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>
